@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: "Trebuchet MS", Helvetica, sans-serif; */
+}
+
+header {
+  background-color: #333333;
+  color: white;
+  padding: 15px 0;
+  position: relative;
+}
+
+footer {
+  background-color: #222222;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+header li {
+  display: inline;
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+header ul {
+  padding-left: 200px;
+}
+
+footer li {
+  display: inline;
+  padding: 0 10px;
+  font-size: 14px;
+  border-left: 1px dotted white;
+}
+
+footer ul {
+  padding-left: 0px;
+}
+
+.div-1, .div-3 {
+  background-color: #1e93cc;
+  color: white;
+}
+
+.div-5 {
+  background-color: #eeeeee;
+}
+
+.top-right {
+  position: absolute;
+  right: 110px;
+}
+
+.bottom-right {
+  position: absolute;
+  right: 50px;
+}
+
+.div-1 > p {
+  font-size: 24px;
+  padding-top: 100px;
+}
+
+.div-2 > p {
+  font-size: 24px;
+  padding: 25px;
+}
+
+.div-1 > button {
+  background-color: #e99002;
+  border: 3px solid white;
+  border-radius: 15px;
+  padding: 25px;
+  color: white;
+  font-size: 22px;
+  margin: 30px;
+}
+
+main {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.div-1 > img {
+  position: absolute;
+  left: 100px;
+  padding: 20px 0;
+}
+
+.div-1 {
+  height: 300px;
+}
+
+.div-3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 50px 125px;
+  text-align: left;
+}
+
+.text {
+  padding: 15px 10px;
+}
+
+.div-3 p {
+  margin: 10px 0;
+  color: #dadadc;
+  font-size: 14px;
+}
+
+.div-4 {
+  color: #6f6f70;
+  font-size: 22px;
+  padding: 25px;
+}
+
+.div-5, .div-6 {
+  background-color: #eeeeee;
+}
+
+.div-5 {
+  padding-top: 30px;
+}
+
+.div-5 img {
+  margin: 0 15px;
+}
+
+.div-6 {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.div-7 {
+  padding-bottom: 50px;
+}
+
+.div-7 button {
+  margin: 50px 2px;
+  padding: 20px 10px;
+  font-size: 24px;
+  color: white;
+  border-style: hidden;
+  border-radius: 10px;
+  background-color: #165882;
+  width: 200px;
+}
+
+button:last-child {
+  background-color: #e99002;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  background: url(img/icon.png) no-repeat center center, #165882;
+  border-radius: 50%;
+}
+
+main > .icon {
+  position: absolute;
+  right: 15px;
+  top: 600px;
+}
+
+footer > .icon {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+}
