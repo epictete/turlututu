@@ -72,18 +72,18 @@ main {
   position: relative;
 }
 
-.div-1 > img {
+.div-1 img {
   position: absolute;
   left: 100px;
   top: 20px;
 }
 
-.div-1 > p {
+.div-1 p {
   font-size: 24px;
   padding-top: 130px;
 }
 
-.div-1 > button {
+.div-1 button {
   background-color: #e99002;
   border: 2px solid white;
   border-radius: 10px;
