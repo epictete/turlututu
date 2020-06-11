@@ -4,82 +4,59 @@
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  /* font-family: "Trebuchet MS", Helvetica, sans-serif; */
 }
 
 header {
+  height: 46px;
+  display: flex;
+  align-items: center;
   background-color: #333333;
   color: white;
-  padding: 15px 0;
   position: relative;
 }
 
-footer {
-  background-color: #222222;
-  color: white;
-  padding-top: 15px;
-  padding-bottom: 30px;
-  position: relative;
+.top-menu {
+  position: absolute;
+  left: 250px;
 }
 
 header li {
   display: inline;
-  font-size: 14px;
-  padding: 0 20px;
+  padding-right: 28px;
+  font-size: 12px;
 }
 
-header ul {
-  padding-left: 200px;
+.login {
+  font-size: 12px;
+  position: absolute;
+  right: 150px;
+}
+
+footer {
+  height: 63px;
+  background-color: #222222;
+  color: white;
+  position: relative;
+}
+
+footer ul {
+  position: absolute;
+  left: 0px;
+  top: 10px;
 }
 
 footer li {
   display: inline;
   padding: 0 10px;
-  font-size: 14px;
+  font-size: 12px;
   border-left: 1px dotted white;
 }
 
-footer ul {
-  padding-left: 0px;
-}
-
-.div-1, .div-3 {
-  background-color: #1e93cc;
-  color: white;
-}
-
-.div-5 {
-  background-color: #eeeeee;
-}
-
-.top-right {
+footer p {
   position: absolute;
-  right: 110px;
-}
-
-.bottom-right {
-  position: absolute;
-  right: 50px;
-}
-
-.div-1 > p {
-  font-size: 24px;
-  padding-top: 100px;
-}
-
-.div-2 > p {
-  font-size: 24px;
-  padding: 25px;
-}
-
-.div-1 > button {
-  background-color: #e99002;
-  border: 3px solid white;
-  border-radius: 15px;
-  padding: 25px;
-  color: white;
-  font-size: 22px;
-  margin: 30px;
+  top: 12px;
+  right: 55px;
+  font-size: 13px;
 }
 
 main {
@@ -88,63 +65,102 @@ main {
   position: relative;
 }
 
+.div-1 {
+  background-color: #1e93cc;
+  color: white;
+  height: 315px;
+  position: relative;
+}
+
 .div-1 > img {
   position: absolute;
   left: 100px;
-  padding: 20px 0;
+  top: 20px;
 }
 
-.div-1 {
-  height: 300px;
+.div-1 > p {
+  font-size: 24px;
+  padding-top: 130px;
+}
+
+.div-1 > button {
+  background-color: #e99002;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  font-size: 22px;
+  margin: 30px;
+}
+
+.div-2 {
+  height: 70px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .div-3 {
+  height: 360px;
+  background-color: #1e93cc;
+  color: white;
   display: grid;
   grid-template-columns: auto auto;
-  padding: 50px 125px;
-  text-align: left;
+  justify-content: center;
+  align-content: center;
+  padding: 0px 125px;
 }
 
 .text {
   padding: 15px 10px;
-}
-
-.div-3 p {
-  margin: 10px 0;
-  color: #dadadc;
+  text-align: left;
   font-size: 14px;
 }
 
-.div-4 {
-  color: #6f6f70;
-  font-size: 22px;
-  padding: 25px;
+.text h2 {
+  font-size: 24px;
+}
+.text p {
+  margin-top: 10px;
+  color: #dadadc;
 }
 
-.div-5, .div-6 {
-  background-color: #eeeeee;
+.div-4 {
+  height: 72px;
+  color: #6f6f70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
 }
 
 .div-5 {
-  padding-top: 30px;
+  height: 150px;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
 }
 
 .div-5 img {
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 .div-6 {
-  padding-top: 30px;
-  padding-bottom: 50px;
+  height: 111px;
+  background-color: #eeeeee;
+  padding-top: 20px;
 }
 
 .div-7 {
-  padding-bottom: 50px;
+  height: 250px;
 }
 
 .div-7 button {
-  margin: 50px 2px;
-  padding: 20px 10px;
+  margin: 55px 1px;
+  padding: 16px 10px;
   font-size: 24px;
   color: white;
   border-style: hidden;
@@ -158,8 +174,8 @@ button:last-child {
 }
 
 .icon {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   background: url(img/icon.png) no-repeat center center, #165882;
   border-radius: 50%;
 }
@@ -167,11 +183,11 @@ button:last-child {
 main > .icon {
   position: absolute;
   right: 15px;
-  top: 600px;
+  top: 610px;
 }
 
 footer > .icon {
   position: absolute;
-  right: 15px;
-  bottom: 20px;
+  right: 18px;
+  bottom: 23px;
 }
