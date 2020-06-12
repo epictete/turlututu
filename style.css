@@ -180,14 +180,9 @@ button:last-child {
   border-radius: 50%;
 }
 
-main > .icon {
-  position: absolute;
-  right: 15px;
-  top: 610px;
-}
-
-footer > .icon {
-  position: absolute;
+.icon {
+  position: fixed;
   right: 18px;
   bottom: 23px;
+  z-index: +1;
 }
