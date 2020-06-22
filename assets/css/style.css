@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,22 +7,30 @@
 
 header {
   height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #333333;
   color: white;
-  position: relative;
-}
-
-.top-menu {
-  position: absolute;
-  left: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 header li {
   display: inline;
   padding-right: 28px;
   font-size: 12px;
+}
+
+.top-menu {
+  position: absolute;
+  left: 250px;
 }
 
 .login {
@@ -68,24 +75,25 @@ main {
 .div-1 {
   background-color: #1e93cc;
   color: white;
-  height: 315px;
+  height: 360px;
   position: relative;
 }
 
 .div-1 img {
   position: absolute;
   left: 100px;
-  top: 20px;
+  top: 65px;
 }
 
 .div-1 p {
   font-size: 24px;
-  padding-top: 130px;
+  padding-top: 175px;
 }
 
 .div-1 button {
-  background-color: #e99002;
-  border: 2px solid white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
   border-radius: 10px;
   padding: 20px;
   color: white;
@@ -96,19 +104,30 @@ main {
 .div-2 {
   height: 70px;
   font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .div-3 {
   height: 360px;
   background-color: #1e93cc;
   color: white;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
-  align-content: center;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   padding: 0px 125px;
 }
 
@@ -121,26 +140,39 @@ main {
 .text h2 {
   font-size: 24px;
 }
+
 .text p {
   margin-top: 10px;
   color: #dadadc;
 }
 
 .div-4 {
-  height: 72px;
+  height: 70px;
   color: #6f6f70;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 22px;
 }
 
 .div-5 {
   height: 150px;
   background-color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 10px;
 }
 
@@ -176,13 +208,11 @@ button:last-child {
 .icon {
   width: 55px;
   height: 55px;
-  background: url(img/icon.png) no-repeat center center, #165882;
+  background: url(/assets/img/icon.png) no-repeat center center, #165882;
   border-radius: 50%;
-}
-
-.icon {
   position: fixed;
   right: 18px;
   bottom: 23px;
-  z-index: +1;
+  z-index: 1;
 }
+/*# sourceMappingURL=style.css.map */
